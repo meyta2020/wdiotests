@@ -2,8 +2,15 @@ import LoginPage from  '../pageobjects/login.page';
 import ProfilePage from '../pageobjects/profile.page'
 
 describe('Auth', () => {
-    it('user logs in with valid data', () => {
+    beforeEach(() => {
         LoginPage.open();
+    });
+
+    afterEach(() => {
+        browser.execute('window.localStorage.clear()');
+    });
+
+    it('user logs in with valid data', () => {
         LoginPage.setLogin('tx@gmail.com');
         LoginPage.setPassword('123456');
         LoginPage.clickSubmitButton();
@@ -11,8 +18,6 @@ describe('Auth', () => {
     });
 
     it('Submit button is disabled while required fields are empty', () => {
-        browser.execute('window.localStorage.clear()');
-        LoginPage.open();
         LoginPage.submitButtonIsDisabled();
     });
 

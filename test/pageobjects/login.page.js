@@ -24,7 +24,7 @@ class LoginPage extends Page {
     }
 
     submitButtonIsDisabled () {
-        expect(this.buttonSubmit).toBeDisplayed();
+        expect(this.buttonSubmit).toBeDisabled();
     }
 }
 
