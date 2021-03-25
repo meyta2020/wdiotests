@@ -8,8 +8,20 @@ describe('Auth', () => {
         LoginPage.setPassword('123456');
         LoginPage.clickSubmitButton();
         ProfilePage.isOpen();
+        browser.execute('window.localStorage.clear()');
+
+    });
+
+    it('Submit button is disabled while required fields are empty', () => {
+        LoginPage.open();
+        browser.pause(4000);
+        LoginPage.setLogin();
+        expect(LoginPage.setLogin()
+
     });
 });
+
+   // test
 
 
 
