@@ -19,24 +19,22 @@ describe('Auth', () => {
 
     it('Submit button is disabled while required fields are empty', () => {
         LoginPage.submitButtonIsDisabled();
+        //expect(LoginPage.buttonSubmit).toBeDisplayed()
     });
 
     it('The error appears if the email is entered incorrectly ', function () {
         LoginPage.setLogin('tx.gmail.com');
-        LoginPage.errorEmail;
+        LoginPage.emailNotValid();
     });
 
-    it('The error appears after deleting characters in the mail field', function () {
-        LoginPage.setLogin('tx');
-        browser.pause(5000);
-        LoginPage.inputUsername.clearValue();
-        browser.pause(5000);
-        LoginPage.requiredErrorEmail;
-        browser.pause(3000);
-
-
-
-    });
+    //it.only('The error Required appears after deleting characters in the mail field', function () {
+    //     LoginPage.setLogin('tx@gmail.com');
+    //
+    //     LoginPage.inputUsername.clearValue();
+    //
+    //     LoginPage.requiredErrorEmail;
+    //
+//});
 
 });
 

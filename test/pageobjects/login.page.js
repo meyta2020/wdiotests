@@ -28,6 +28,14 @@ class LoginPage extends Page {
     submitButtonIsDisabled () {
         expect(this.buttonSubmit).toBeDisabled();
     }
+
+    emailNotValid (){
+        expect(this.errorEmail).toBeDisplayed();
+    }
+
+    deleteData () {
+
+    }
 }
 
 export default new LoginPage();
