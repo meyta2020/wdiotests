@@ -27,14 +27,14 @@ describe('Auth', () => {
         LoginPage.emailNotValid();
     });
 
-    //it.only('The error Required appears after deleting characters in the mail field', function () {
-    //     LoginPage.setLogin('tx@gmail.com');
-    //
-    //     LoginPage.inputUsername.clearValue();
-    //
-    //     LoginPage.requiredErrorEmail;
-    //
-//});
+    it('The error Required appears after deleting characters in the mail field', function () {
+        LoginPage.setLogin('tx@gmail.com');
+
+        LoginPage.inputUsername.clearValue();
+
+        LoginPage.requiredErrorEmail;
+
+});
 
 });
 
