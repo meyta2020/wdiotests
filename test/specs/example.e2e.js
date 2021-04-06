@@ -19,7 +19,13 @@ describe('Auth', () => {
 
     it('Submit button is disabled while required fields are empty', () => {
         LoginPage.submitButtonIsDisabled();
-        //expect(LoginPage.buttonSubmit).toBeDisplayed()
+    });
+
+    it('falls if invalid data provided', function () {
+        LoginPage.setLogin('tx@gmail.com');
+        LoginPage.setPassword('12345');
+        LoginPage.clickSubmitButton();
+        LoginPage.errorToastAppeared();
     });
 
     it('The error appears if the email is entered incorrectly ', function () {
@@ -29,18 +35,11 @@ describe('Auth', () => {
 
     it('The error Required appears after deleting characters in the mail field', function () {
         LoginPage.setLogin('tx@gmail.com');
-
         LoginPage.inputUsername.clearValue();
-
         LoginPage.requiredErrorEmail;
     });
 
-    it('falls if invalid data provided', function () {
-        LoginPage.setLogin('tx@gmail.com');
-        LoginPage.setPassword('12345');
-        LoginPage.clickSubmitButton();
-        LoginPage.errorToastAppeared();
-    });
+
 
 });
 
