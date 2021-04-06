@@ -52,6 +52,15 @@ describe('Auth', () => {
         LoginPage.passwordRequiredError();
     });
 
+    it('The error Required appears after deleting characters in the mail field and password field', function () {
+        LoginPage.setLogin('tx@gmail.com');
+        LoginPage.emptyLoginInput();
+        LoginPage.loginRequiredError();
+        LoginPage.setPassword('123');
+        LoginPage.emptyPasswordInput();
+        LoginPage.passwordRequiredError();
+    });
+
 });
 
 

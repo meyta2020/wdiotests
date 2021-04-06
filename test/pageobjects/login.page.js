@@ -2,33 +2,19 @@ import Page from './page';
 
 class LoginPage extends Page {
 
-    get inputUsername() {
-        return $('#normal_login_email');
-    }
+    get inputUsername() {return $('#normal_login_email');}
 
-    get inputPassword() {
-        return $('#normal_login_password');
-    }
+    get inputPassword() {return $('#normal_login_password');}
 
-    get buttonSubmit() {
-        return $('.login-form-button');
-    }
+    get buttonSubmit() {return $('.login-form-button');}
 
-    get errorEmail() {
-        return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);
-    }
+    get errorEmail() {return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
 
-    get errorToast() {
-        return $('.ant-notification-notice-message');
-    }
+    get errorToast() {return $('.ant-notification-notice-message');}
 
-    get loginValidateError() {
-        return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');
-    }
+    get loginValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');}
 
-    get passwordValidateError() {
-        return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');
-    }
+    get passwordValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');}
 
     open() {
         return super.open('/');
