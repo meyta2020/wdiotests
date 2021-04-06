@@ -21,7 +21,7 @@ describe('Auth', () => {
         LoginPage.submitButtonIsDisabled();
     });
 
-    it('falls if invalid data provided', function () {
+    it('fails if invalid data provided', function () {
         LoginPage.setLogin('tx@gmail.com');
         LoginPage.setPassword('12345');
         LoginPage.clickSubmitButton();
@@ -32,6 +32,13 @@ describe('Auth', () => {
         LoginPage.setLogin('tx.gmail.com');
         LoginPage.emailNotValid();
     });
+
+    it('The error appears if the password is entered incorrectly', function () {
+        LoginPage.setLogin('tx@gmail.com');
+        LoginPage.setPassword('123');
+        LoginPage.clickSubmitButton();
+        LoginPage.errorToastAppeared();
+    })
 
     it('The error Required appears after deleting characters in the mail field', function () {
         LoginPage.setLogin('tx@gmail.com');

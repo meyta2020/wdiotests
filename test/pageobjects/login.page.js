@@ -38,9 +38,6 @@ class LoginPage extends Page {
         expect(this.errorEmail).toBeDisplayed();
     }
 
-    deleteData () {
-
-    }
 }
 
 export default new LoginPage();
