@@ -1,4 +1,4 @@
-import LoginPage from  '../pageobjects/login.page';
+import LoginPage from '../pageobjects/login.page';
 import ProfilePage from '../pageobjects/profile.page'
 
 describe('Auth', () => {
@@ -33,8 +33,14 @@ describe('Auth', () => {
         LoginPage.inputUsername.clearValue();
 
         LoginPage.requiredErrorEmail;
+    });
 
-});
+    it('falls if invalid data provided', function () {
+        LoginPage.setLogin('tx@gmail.com');
+        LoginPage.setPassword('12345');
+        LoginPage.clickSubmitButton();
+        LoginPage.errorToastAppeared();
+    });
 
 });
 
