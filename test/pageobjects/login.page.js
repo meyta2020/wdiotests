@@ -2,23 +2,51 @@ import Page from './page';
 
 class LoginPage extends Page {
 
-    get inputUsername () { return $('#normal_login_email');}
-    get inputPassword () { return $('#normal_login_password');}
-    get buttonSubmit () { return $('.login-form-button');}
-    get errorEmail() { return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
-    get requiredErrorEmail () {return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="Required"]`);}
-    get errorToast () { return $('.ant-notification-notice-message'); }
+    get inputUsername() {
+        return $('#normal_login_email');
+    }
 
+    get inputPassword() {
+        return $('#normal_login_password');
+    }
 
-    setLogin (email) {
+    get buttonSubmit() {
+        return $('.login-form-button');
+    }
+
+    get errorEmail() {
+        return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);
+    }
+
+    get requiredError() {
+        return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="Required"]`);
+    }
+
+    get errorToast() {
+        return $('.ant-notification-notice-message');
+    }
+
+    get loginValidateError() {
+        return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');
+    }
+
+    open() {
+        return super.open('/');
+    }
+
+    submitButtonIsDisabled() {
+        expect(this.buttonSubmit).toBeDisabled();
+    }
+
+    setLogin(email) {
         this.inputUsername.setValue(email);
     }
 
-    setPassword (password) {
+    setPassword(password) {
         this.inputPassword.setValue(password);
     }
 
-    clickSubmitButton () {
+    clickSubmitButton() {
         this.buttonSubmit.click();
     }
 
@@ -26,16 +54,17 @@ class LoginPage extends Page {
         expect(this.errorToast).toBeDisplayed();
     }
 
-    open () {
-        return super.open('/');
-    }
-
-    submitButtonIsDisabled () {
-        expect(this.buttonSubmit).toBeDisabled();
-    }
-
-    emailNotValid (){
+    emailNotValid() {
         expect(this.errorEmail).toBeDisplayed();
+    }
+
+    emptyLoginInput() {
+        this.inputUsername.clearValue();
+    }
+
+    loginRequiredInput() {
+        expect(this.loginValidateError).toBeDisplayed();
+        expect(this.loginValidateError.getText()).toEqual('Required');
     }
 
 }
