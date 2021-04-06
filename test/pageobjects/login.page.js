@@ -18,16 +18,16 @@ class LoginPage extends Page {
         return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);
     }
 
-    get requiredError() {
-        return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="Required"]`);
-    }
-
     get errorToast() {
         return $('.ant-notification-notice-message');
     }
 
     get loginValidateError() {
         return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');
+    }
+
+    get passwordValidateError() {
+        return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');
     }
 
     open() {
@@ -59,12 +59,21 @@ class LoginPage extends Page {
     }
 
     emptyLoginInput() {
-        this.inputUsername.clearValue();
+        this.clearInput(this.inputUsername);
     }
 
-    loginRequiredInput() {
+    emptyPasswordInput() {
+        this.clearInput(this.inputPassword);
+    }
+
+    loginRequiredError() {
         expect(this.loginValidateError).toBeDisplayed();
         expect(this.loginValidateError.getText()).toEqual('Required');
+    }
+
+    passwordRequiredError() {
+        expect(this.passwordValidateError).toBeDisplayed();
+        expect(this.passwordValidateError.getText()).toEqual('Required');
     }
 
 }

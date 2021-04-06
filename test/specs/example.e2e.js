@@ -40,25 +40,17 @@ describe('Auth', () => {
         LoginPage.errorToastAppeared();
     })
 
-    it.only('The error Required appears after deleting characters in the mail field', function () {
+    it('The error Required appears after deleting characters in the mail field', function () {
         LoginPage.setLogin('tx@gmail.com');
         LoginPage.emptyLoginInput();
-        LoginPage.requiredError();
-
-        // LoginPage.setLogin('tx@gmail.com');
-        // browser.pause(3000);
-        // LoginPage.inputUsername.clearValue();
-        // browser.pause(3000);
-        // LoginPage.requiredError;
+        LoginPage.loginRequiredError();
     });
 
-    // it('The error Required appears after deleting characters in the password field', function () {
-    //     LoginPage.setPassword('12345');
-    //     browser.pause(3000);
-    //     LoginPage.inputPassword.clearValue();
-    //     browser.pause(3000);
-    //     LoginPage.requiredError;
-    // });
+    it('The error Required appears after deleting characters in the password field', function () {
+        LoginPage.setPassword('123');
+        LoginPage.emptyPasswordInput();
+        LoginPage.passwordRequiredError();
+    });
 
 });
 
