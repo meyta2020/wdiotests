@@ -1,67 +1,63 @@
-import Page from './page';
+import Page from "./page";
 
 class LoginPage extends Page {
+  get inputUsername() {return $("#normal_login_email");}
 
-    get inputUsername() {return $('#normal_login_email');}
+  get inputPassword() {return $("#normal_login_password");}
 
-    get inputPassword() {return $('#normal_login_password');}
+  get buttonSubmit() {return $(".login-form-button");}
 
-    get buttonSubmit() {return $('.login-form-button');}
+  get errorEmail() {return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
 
-    get errorEmail() {return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
+  get errorToast() {return $(".ant-notification-notice-message");}
 
-    get errorToast() {return $('.ant-notification-notice-message');}
+  get loginValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');}
 
-    get loginValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');}
+  get passwordValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');}
 
-    get passwordValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');}
+  open() {return super.open("/");}
 
-    open() {
-        return super.open('/');
-    }
+  submitButtonIsDisabled() {
+    expect(this.buttonSubmit).toBeDisabled();
+  }
 
-    submitButtonIsDisabled() {
-        expect(this.buttonSubmit).toBeDisabled();
-    }
+  setLogin(email) {
+    this.inputUsername.setValue(email);
+  }
 
-    setLogin(email) {
-        this.inputUsername.setValue(email);
-    }
+  setPassword(password) {
+    this.inputPassword.setValue(password);
+  }
 
-    setPassword(password) {
-        this.inputPassword.setValue(password);
-    }
+  clickSubmitButton() {
+    this.buttonSubmit.click();
+  }
 
-    clickSubmitButton() {
-        this.buttonSubmit.click();
-    }
+  errorToastAppeared() {
+    expect(this.errorToast).toBeDisplayed();
+  }
 
-    errorToastAppeared() {
-        expect(this.errorToast).toBeDisplayed();
-    }
+  emailNotValid() {
+    expect(this.errorEmail).toBeDisplayed();
+  }
 
-    emailNotValid() {
-        expect(this.errorEmail).toBeDisplayed();
-    }
+  emptyLoginInput() {
+    this.clearInput(this.inputUsername);
+  }
 
-    emptyLoginInput() {
-        this.clearInput(this.inputUsername);
-    }
+  emptyPasswordInput() {
+    this.clearInput(this.inputPassword);
+  }
 
-    emptyPasswordInput() {
-        this.clearInput(this.inputPassword);
-    }
+  loginRequiredError() {
+    expect(this.loginValidateError).toBeDisplayed();
+    expect(this.loginValidateError.getText()).toEqual("Required");
+  }
 
-    loginRequiredError() {
-        expect(this.loginValidateError).toBeDisplayed();
-        expect(this.loginValidateError.getText()).toEqual('Required');
-    }
-
-    passwordRequiredError() {
-        expect(this.passwordValidateError).toBeDisplayed();
-        expect(this.passwordValidateError.getText()).toEqual('Required');
-    }
-
+  passwordRequiredError() {
+    expect(this.passwordValidateError).toBeDisplayed();
+    expect(this.passwordValidateError.getText()).toEqual("Required");
+  }
 }
 
 export default new LoginPage();
