@@ -1,6 +1,9 @@
 import Page from "./page";
 
 class LoginPage extends Page {
+
+  get loginPageClick(){return $("//a[contains(@href,'/user/login')]");}
+
   get inputUsername() {return $("#normal_login_email");}
 
   get inputPassword() {return $("#normal_login_password");}
@@ -15,13 +18,14 @@ class LoginPage extends Page {
 
   get passwordValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');}
 
-  open() {return super.open("/");}
+  open() {return super.open("/user/login/");}
 
   submitButtonIsDisabled() {
     expect(this.buttonSubmit).toBeDisabled();
   }
 
   setLogin(email) {
+
     this.inputUsername.setValue(email);
   }
 
@@ -61,3 +65,4 @@ class LoginPage extends Page {
 }
 
 export default new LoginPage();
+
