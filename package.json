@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js"
+    "test:chrome": "npx wdio run chrome.conf.js",
+    "test:firefox": "npx wdio run firefox.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,8 @@
     "@wdio/mocha-framework": "^7.1.2",
     "@wdio/spec-reporter": "^7.1.1",
     "@wdio/sync": "^7.1.1",
-    "prettier": "^2.2.1"
+    "geckodriver": "^1.22.3",
+    "prettier": "^2.2.1",
+    "wdio-geckodriver-service": "^1.1.2"
   }
 }
