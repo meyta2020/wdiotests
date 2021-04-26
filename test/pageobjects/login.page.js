@@ -18,12 +18,7 @@ class LoginPage extends Page {
   }
 
   get errorEmail() {
-    return $(`/
-        /
-        div[
-
-        @class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);
-  }
+    return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
 
   get errorToast() {
     return $(".ant-notification-notice-message");
