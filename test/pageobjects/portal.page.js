@@ -16,4 +16,20 @@ export default class PortalPage extends Page {
   get linkChallenges() {
     return $('[data-qa="topmenu-Challenges"]');
   }
+
+  goToCouses() {
+    this.linkCourses.click();
+  }
+
+  goToCards() {
+    this.linkCards.click();
+  }
+
+  goToDiary() {
+    this.linkDiary.click();
+  }
+
+  goToChallenges() {
+    this.linkChallenges.click();
+  }
 }
