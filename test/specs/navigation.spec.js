@@ -1,4 +1,5 @@
-
+import MainPage from "../pageobjects/portal/main.portal.page";
+import CoursesPage from "../pageobjects/portal/courses.portal.page";
 
 describe("Navigation", () => {
   before(() => {
@@ -6,8 +7,11 @@ describe("Navigation", () => {
   });
 
   beforeEach(() => {
-    browser.url("/");
+    MainPage.open();
   });
 
-  it("Courses Page is open", function () {});
+  it("Courses Page is open", function () {
+    MainPage.goToCouses();
+    CoursesPage.isOpen();
+  });
 });
