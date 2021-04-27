@@ -39,7 +39,7 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - master
   nightly:
     triggers:
       - schedule:
@@ -47,6 +47,6 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - master
     jobs:
       - build-and-test
