@@ -50,3 +50,5 @@ workflows:
                 - master
     jobs:
       - build-and-test
+
+        //test
