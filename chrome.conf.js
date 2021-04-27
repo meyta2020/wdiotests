@@ -1,4 +1,4 @@
-const hooks = require('./config/hooks.konf');
+const hooks = require('./config/hooks.conf');
 const base = require('./config/base.conf');
 
 exports.config = {
