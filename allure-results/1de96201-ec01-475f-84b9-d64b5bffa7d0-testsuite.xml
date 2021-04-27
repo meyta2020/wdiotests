@@ -1,0 +1,197 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1619547655931' stop='1619547668266'>
+    <name>Auth</name>
+    <title>Auth</title>
+    <test-cases>
+        <test-case start='1619547655932' status='passed' stop='1619547659597'>
+            <name>user logs in with valid data</name>
+            <title>user logs in with valid data</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1619547659597' status='passed' stop='1619547660310'>
+            <name>Submit button is disabled while required fields are empty</name>
+            <title>Submit button is disabled while required fields are empty</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1619547660310' status='passed' stop='1619547661958'>
+            <name>fails if invalid data provided</name>
+            <title>fails if invalid data provided</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1619547661959' status='passed' stop='1619547663775'>
+            <name>The error appears if the email is entered incorrectly </name>
+            <title>The error appears if the email is entered incorrectly </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1619547663775' status='passed' stop='1619547665355'>
+            <name>The error appears if the password is entered incorrectly</name>
+            <title>The error appears if the password is entered incorrectly</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1619547665355' status='passed' stop='1619547666286'>
+            <name>The error Required appears after deleting characters in the mail field</name>
+            <title>The error Required appears after deleting characters in the mail field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1619547666286' status='failed' stop='1619547667085'>
+            <name>The error Required appears after deleting characters in the password field</name>
+            <title>The error Required appears after deleting characters in the password field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='8e1c8522-922e-4784-896e-bde8743ed4d7-attachment.png' type='image/png' size='59314'/>
+            </attachments>
+            <failure>
+                <message>expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Required"
+                Received: ""</message>
+                <stack-trace>Error: expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Required"
+                Received: ""
+                    at LoginPage.passwordRequiredError (/Users/meyta/qa/wdiotests/test/pageobjects/login.page.js:82:50)
+                    at Context.&lt;anonymous> (/Users/meyta/qa/wdiotests/test/specs/login.spec.js:52:15)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1619547667085' status='passed' stop='1619547668265'>
+            <name>The error Required appears after deleting characters in the mail field and password field</name>
+            <title>The error Required appears after deleting characters in the mail field and password field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
