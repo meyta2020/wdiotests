@@ -1,0 +1,58 @@
+{
+  "uid" : "29fe70eff63228de",
+  "name" : "Submit button is disabled while required fields are empty",
+  "fullName" : "Auth.Submit button is disabled while required fields are empty",
+  "historyId" : "94a60e238611f97655b0e9ac2c993c14",
+  "time" : {
+    "start" : 1619489996837,
+    "stop" : 1619489997305,
+    "duration" : 468
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Auth"
+  }, {
+    "name" : "testClass",
+    "value" : "Auth"
+  }, {
+    "name" : "testMethod",
+    "value" : "Submit button is disabled while required fields are empty"
+  }, {
+    "name" : "package",
+    "value" : "Auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-90.0.4430.85"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29fe70eff63228de.json",
+  "parameterValues" : [ "Chrome-90.0.4430.85" ]
+}

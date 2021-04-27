@@ -1,0 +1,58 @@
+{
+  "uid" : "1fbd79f3a327412d",
+  "name" : "The error Required appears after deleting characters in the password field",
+  "fullName" : "Auth.The error Required appears after deleting characters in the password field",
+  "historyId" : "aeb4551272edce0d19d2704581f79fa4",
+  "time" : {
+    "start" : 1619490002124,
+    "stop" : 1619490003118,
+    "duration" : 994
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Auth"
+  }, {
+    "name" : "testClass",
+    "value" : "Auth"
+  }, {
+    "name" : "testMethod",
+    "value" : "The error Required appears after deleting characters in the password field"
+  }, {
+    "name" : "package",
+    "value" : "Auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-90.0.4430.85"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1fbd79f3a327412d.json",
+  "parameterValues" : [ "Chrome-90.0.4430.85" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "cd92492d020be6de",
+  "name" : "The error appears if the email is entered incorrectly ",
+  "fullName" : "Auth.The error appears if the email is entered incorrectly ",
+  "historyId" : "1acc9a436c5a3635415c1db653221dcb",
+  "time" : {
+    "start" : 1619489998825,
+    "stop" : 1619489999939,
+    "duration" : 1114
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Auth"
+  }, {
+    "name" : "testClass",
+    "value" : "Auth"
+  }, {
+    "name" : "testMethod",
+    "value" : "The error appears if the email is entered incorrectly "
+  }, {
+    "name" : "package",
+    "value" : "Auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-90.0.4430.85"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cd92492d020be6de.json",
+  "parameterValues" : [ "Chrome-90.0.4430.85" ]
+}

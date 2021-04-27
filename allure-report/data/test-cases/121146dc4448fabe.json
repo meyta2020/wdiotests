@@ -1,0 +1,58 @@
+{
+  "uid" : "121146dc4448fabe",
+  "name" : "The error Required appears after deleting characters in the mail field and password field",
+  "fullName" : "Auth.The error Required appears after deleting characters in the mail field and password field",
+  "historyId" : "b1a9086ce470a157369aaf8ba947842e",
+  "time" : {
+    "start" : 1619490003118,
+    "stop" : 1619490004693,
+    "duration" : 1575
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Auth"
+  }, {
+    "name" : "testClass",
+    "value" : "Auth"
+  }, {
+    "name" : "testMethod",
+    "value" : "The error Required appears after deleting characters in the mail field and password field"
+  }, {
+    "name" : "package",
+    "value" : "Auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-90.0.4430.85"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "121146dc4448fabe.json",
+  "parameterValues" : [ "Chrome-90.0.4430.85" ]
+}

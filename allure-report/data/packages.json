@@ -1,0 +1,113 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Auth",
+    "children" : [ {
+      "name" : "user logs in with valid data",
+      "uid" : "c24781742ee44b20",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619489993377,
+        "stop" : 1619489996837,
+        "duration" : 3460
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "Submit button is disabled while required fields are empty",
+      "uid" : "29fe70eff63228de",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619489996837,
+        "stop" : 1619489997305,
+        "duration" : 468
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "fails if invalid data provided",
+      "uid" : "2109909142067a0a",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619489997305,
+        "stop" : 1619489998825,
+        "duration" : 1520
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "The error appears if the email is entered incorrectly ",
+      "uid" : "cd92492d020be6de",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619489998825,
+        "stop" : 1619489999939,
+        "duration" : 1114
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "The error appears if the password is entered incorrectly",
+      "uid" : "3e1436f95ecf7f7",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619489999940,
+        "stop" : 1619490001226,
+        "duration" : 1286
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "The error Required appears after deleting characters in the mail field",
+      "uid" : "e6108213853ad2ba",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619490001226,
+        "stop" : 1619490002124,
+        "duration" : 898
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "The error Required appears after deleting characters in the password field",
+      "uid" : "1fbd79f3a327412d",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619490002124,
+        "stop" : 1619490003118,
+        "duration" : 994
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    }, {
+      "name" : "The error Required appears after deleting characters in the mail field and password field",
+      "uid" : "121146dc4448fabe",
+      "parentUid" : "5a4c7f42b682e5a32db9b5322bce82ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619490003118,
+        "stop" : 1619490004693,
+        "duration" : 1575
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-90.0.4430.85" ]
+    } ],
+    "uid" : "5a4c7f42b682e5a32db9b5322bce82ad"
+  } ]
+}

@@ -1,0 +1,81 @@
+[ {
+  "uid" : "c24781742ee44b20",
+  "name" : "user logs in with valid data",
+  "time" : {
+    "start" : 1619489993377,
+    "stop" : 1619489996837,
+    "duration" : 3460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd92492d020be6de",
+  "name" : "The error appears if the email is entered incorrectly ",
+  "time" : {
+    "start" : 1619489998825,
+    "stop" : 1619489999939,
+    "duration" : 1114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29fe70eff63228de",
+  "name" : "Submit button is disabled while required fields are empty",
+  "time" : {
+    "start" : 1619489996837,
+    "stop" : 1619489997305,
+    "duration" : 468
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fbd79f3a327412d",
+  "name" : "The error Required appears after deleting characters in the password field",
+  "time" : {
+    "start" : 1619490002124,
+    "stop" : 1619490003118,
+    "duration" : 994
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2109909142067a0a",
+  "name" : "fails if invalid data provided",
+  "time" : {
+    "start" : 1619489997305,
+    "stop" : 1619489998825,
+    "duration" : 1520
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e1436f95ecf7f7",
+  "name" : "The error appears if the password is entered incorrectly",
+  "time" : {
+    "start" : 1619489999940,
+    "stop" : 1619490001226,
+    "duration" : 1286
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "121146dc4448fabe",
+  "name" : "The error Required appears after deleting characters in the mail field and password field",
+  "time" : {
+    "start" : 1619490003118,
+    "stop" : 1619490004693,
+    "duration" : 1575
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6108213853ad2ba",
+  "name" : "The error Required appears after deleting characters in the mail field",
+  "time" : {
+    "start" : 1619490001226,
+    "stop" : 1619490002124,
+    "duration" : 898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
