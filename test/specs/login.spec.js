@@ -11,8 +11,8 @@ describe("Auth", () => {
   });
 
   it("user logs in with valid data", () => {
-    LoginPage.setLogin("tx@gmail.com");
-    LoginPage.setPassword("123456");
+    LoginPage.setLogin(process.env.LOGIN);
+    LoginPage.setPassword(process.env.PASSWORD);
     LoginPage.clickSubmitButton();
     ProfilePage.isOpen();
   });

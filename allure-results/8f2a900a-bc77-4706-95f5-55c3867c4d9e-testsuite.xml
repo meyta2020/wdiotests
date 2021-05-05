@@ -1,0 +1,197 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620243933821' stop='1620243954026'>
+    <name>Auth</name>
+    <title>Auth</title>
+    <test-cases>
+        <test-case start='1620243933822' status='failed' stop='1620243946602'>
+            <name>user logs in with valid data</name>
+            <title>user logs in with valid data</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b79a1cf8-cba0-4f9a-9f23-7dda45bdb677-attachment.png' type='image/png' size='76959'/>
+            </attachments>
+            <failure>
+                <message>Expect window to have url containing
+                
+                Expected: "/profile"
+                Received: "https://stage.localcoding.us/user/login/"</message>
+                <stack-trace>Error: Expect window to have url containing
+                
+                Expected: "/profile"
+                Received: "https://stage.localcoding.us/user/login/"
+                    at ProfilePage.isOpen (/Users/meyta/qa/wdiotests/test/pageobjects/portal/profile.portal.page.js:7:25)
+                    at Context.&lt;anonymous> (/Users/meyta/qa/wdiotests/test/specs/login.spec.js:17:17)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1620243946602' status='passed' stop='1620243947190'>
+            <name>Submit button is disabled while required fields are empty</name>
+            <title>Submit button is disabled while required fields are empty</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1620243947190' status='passed' stop='1620243948444'>
+            <name>fails if invalid data provided</name>
+            <title>fails if invalid data provided</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1620243948444' status='passed' stop='1620243949460'>
+            <name>The error appears if the email is entered incorrectly </name>
+            <title>The error appears if the email is entered incorrectly </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1620243949460' status='passed' stop='1620243950737'>
+            <name>The error appears if the password is entered incorrectly</name>
+            <title>The error appears if the password is entered incorrectly</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1620243950738' status='passed' stop='1620243951595'>
+            <name>The error Required appears after deleting characters in the mail field</name>
+            <title>The error Required appears after deleting characters in the mail field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1620243951595' status='passed' stop='1620243952610'>
+            <name>The error Required appears after deleting characters in the password field</name>
+            <title>The error Required appears after deleting characters in the password field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1620243952611' status='passed' stop='1620243954025'>
+            <name>The error Required appears after deleting characters in the mail field and password field</name>
+            <title>The error Required appears after deleting characters in the mail field and password field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+                <parameter kind='argument' name='browser' value='Chrome-90.0.4430.93'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
