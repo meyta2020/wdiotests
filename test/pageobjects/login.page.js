@@ -1,85 +1,63 @@
 import Page from "./page";
 
 class LoginPage extends Page {
-  get loginPageClick() {
-    return $("//a[contains(@href,'/user/login')]");
-  }
+  get inputUsername() {return $("#normal_login_email");}
+  get inputPassword() {return $("#normal_login_password");}
+  get buttonSubmit() {return $(".login-form-button");}
+  get errorEmail() {return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
+  get errorToast() {return $(".ant-notification-notice-message");}
+  get loginValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]');}
+  get passwordValidateError() {return $('//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]');}
 
-  get inputUsername() {
-    return $("#normal_login_email");
-  }
-
-  get inputPassword() {
-    return $("#normal_login_password");
-  }
-
-  get buttonSubmit() {
-    return $(".login-form-button");
-  }
-
-  get errorEmail() {
-    return $(`//div[@class='ant-form-item-explain ant-form-item-explain-error']/div[.="'email' is not a valid email"]`);}
-
-  get errorToast() {
-    return $(".ant-notification-notice-message");
-  }
-
-  get loginValidateError() {
-    return $(
-      '//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]'
-    );
-  }
-
-  get passwordValidateError() {
-    return $(
-      '//div[contains(@class,"ant-form-item-with-help")][.//input[@id="normal_login_password"]]//div[@role="alert"]'
-    );
-  }
-
-  open() {
+  async open() {
     return super.open("/user/login/");
   }
 
-  submitButtonIsDisabled() {
-    expect(this.buttonSubmit).toBeDisabled();
+  async setLogin(email) {
+    return (await this.inputUsername).setValue(email);
   }
 
-  setLogin(email) {
-    this.inputUsername.setValue(email);
+  async setPassword(password) {
+    return (await this.inputPassword).setValue(password);
   }
 
-  setPassword(password) {
-    this.inputPassword.setValue(password);
+  async clickSubmitButton() {
+    return (await this.buttonSubmit).click();
   }
 
-  clickSubmitButton() {
-    this.buttonSubmit.click();
+  async submitButtonIsDisabled() {
+    return expect(this.buttonSubmit).toBeDisabled();
   }
 
-  errorToastAppeared() {
-    expect(this.errorToast).toBeDisplayed();
+  async errorToastAppeared() {
+    return expect(this.errorToast).toBeDisplayed();
   }
 
-  emailNotValid() {
-    expect(this.errorEmail).toBeDisplayed();
+  async emptyLoginInput() {
+    return this.clearInput(await this.inputUsername);
   }
 
-  emptyLoginInput() {
-    this.clearInput(this.inputUsername);
+  async emptyPasswordInput() {
+    return this.clearInput(await this.inputPassword);
   }
 
-  emptyPasswordInput() {
-    this.clearInput(this.inputPassword);
+  // async loginRequiredError() {
+  //   await expect(this.loginValidateError).toBeDisplayed();
+  //   await expect(this.loginValidateError.getText()).toEqual("Required");
+  // }
+
+  async loginRequiredError() {
+    await expect(this.loginValidateError).toBeDisplayed();
+    await expect(this.loginValidateError).toHaveText("Required");
   }
 
-  loginRequiredError() {
-    expect(this.loginValidateError).toBeDisplayed();
-    expect(this.loginValidateError.getText()).toEqual("Required");
+  async passwordRequiredError() {
+    await expect(this.passwordValidateError).toBeDisplayed();
+    await expect(this.passwordValidateError).toHaveText('Required');
   }
 
-  passwordRequiredError() {
-    expect(this.passwordValidateError).toBeDisplayed();
-    expect(this.passwordValidateError).toHaveText('Required');
+  async emailNotValid() {
+    return expect(this.errorEmail).toBeDisplayed();
   }
 }
 
