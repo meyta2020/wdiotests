@@ -21,7 +21,7 @@ describe("Auth", () => {
     await LoginPage.submitButtonIsDisabled();
   });
 
-  it("fails if invalid data provided", async function () {
+  it("Fails if invalid data provided", async function () {
     await LoginPage.setLogin("tx@gmail.com");
     await LoginPage.setPassword("12345");
     await LoginPage.clickSubmitButton();
